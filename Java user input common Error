@@ -1,0 +1,19 @@
+
+System.out.println("ent N");
+ N = tc.nextInt();
+ 
+//add this below nextLine to prevent skipping of the consecutive nextLine
+tc.nextLine();
+ 
+Scanner scan = new Scanner(System.in);
+
+//The error, java.util.NoSuchElementException is often thrown in the context of a Scanner when you call nextLine() and there's no next line. 
+//You can cover this by checking for a next line before asking for it.
+
+if(scan.hasNextLine()){
+word1 = scan.nextLine();
+}
+          
+if(scan.hasNextLine()){
+word2= scan.nextLine();
+}
